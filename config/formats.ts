@@ -18,6 +18,16 @@ The column value will be ignored for repeat sections.
 */
 
 export const Formats: FormatList = [
+	{
+		section: "Pokemon Next: Regional Dex",
+	},
+	{
+		name: "[Gen 9] Pokemon Next OU",
+		desc: "Pokemon Next Official Format",
+		mod: 'gen9pokemonnext',
+		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod'],
+		banlist: ['Uber', 'AG', 'Arena Trap', 'Moody', 'Sand Veil', 'Shadow Tag', 'Snow Cloak', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Shed Tail'],
+	},
 
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
