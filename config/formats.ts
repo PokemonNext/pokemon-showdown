@@ -22,7 +22,7 @@ export const Formats: FormatList = [
 		section: "Pokemon Next: Regional Dex",
 	},
 	{
-		name: "[Gen 9] Pokemon Next OU",
+		name: "[Gen 9] Pokemon Next",
 		desc: "Pokemon Next Official Format",
 		mod: 'gen9pokemonnext',
 		ruleset: ['Standard', 'Sleep Moves Clause', '!Sleep Clause Mod'],
