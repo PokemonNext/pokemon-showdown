@@ -151,6 +151,7 @@ import type {PollData} from './chat-plugins/poll';
 import type {AutoResponder} from './chat-plugins/responder';
 import type {RoomEvent, RoomEventAlias, RoomEventCategory} from './chat-plugins/room-events';
 import type {Tournament, TournamentRoomSettings} from './tournaments/index';
+import axios from 'axios';
 
 export abstract class BasicRoom {
 	/** to rename use room.rename */
@@ -1997,7 +1998,7 @@ export class GameRoom extends BasicRoom {
 	 * That's why this function requires a connection. For details, see the top
 	 * comment inside this function.
 	 */
-	async uploadReplay(user?: User, connection?: Connection, options?: 'forpunishment' | 'silent' | 'auto') {
+	async uploadReplay(user: User, connection: Connection, options?: 'forpunishment' | 'silent') {
 		// The reason we don't upload directly to the loginserver, unlike every
 		// other interaction with the loginserver, is because it takes so much
 		// bandwidth that it can get identified as a DoS attack by PHP, Apache, or
@@ -2036,45 +2037,28 @@ export class GameRoom extends BasicRoom {
 			(this as any).unlistReplay ? 2 :
 			isPrivate ? 1 :
 			0;
-
-		if (isPrivate && hidden === 10) {
-			password = Replays.generatePassword();
-		}
-		if (battle.replaySaved !== true && hidden === 10) {
-			battle.replaySaved = 'auto';
-		} else {
-			battle.replaySaved = true;
-		}
-
-		// If we have a direct connetion to a Replays database, just upload the replay
-		// directly.
-
-		if (Replays.db) {
-			const idWithServer = Config.serverid === 'showdown' ? id : `${Config.serverid}-${id}`;
-			try {
-				const fullid = await Replays.add({
-					id: idWithServer,
-					log,
-					players: battle.players.map(p => p.name),
-					format: format.name,
-					rating: rating || null,
-					private: hidden,
-					password,
-					inputlog: battle.inputLog?.join('\n') || null,
-					uploadtime: Math.trunc(Date.now() / 1000),
-				});
-				const url = `https://${Config.routes.replays}/${fullid}`;
-				connection?.popup(
-					`|html|<p>Your replay has been uploaded! It's available at:</p><p> ` +
-					`<a class="no-panel-intercept" href="${url}" target="_blank">${url}</a> ` +
-					`<copytext value="${url}">Copy</copytext>`
-				);
-			} catch (e) {
-				connection?.popup(`Your replay could not be saved: ${e}`);
-				throw e;
-			}
+		
+		if (battle.replaySaved) {
+			connection.popup(`Replay has already been saved! You can grab it at https://replay.thetrainercorner.net/pn/${id}`);
 			return;
 		}
+		battle.replaySaved = true;
+
+		// // If we have a direct connetion to a Replays database, just upload the replay
+		// // directly.
+		const url = `https://replay.thetrainercorner.net/${id}`;
+		connection.popup(`Your replay has been saved. You can find it at ${url}`);
+		await axios.post('https://replay.thetrainercorner.net/pn', {
+				id: id,
+				log: log.replace(/\//g, '\\/'),
+				players: battle.players.map(p => p.name),
+				format: format.name,
+				rating: rating || "null",
+				private: false,
+				password: "",
+				inputlog: battle.inputLog?.join('\n') || "null",
+				uploadtime: Math.trunc(Date.now() / 1000),
+		});
 
 		// Otherwise, (we're probably a side server), upload the replay through LoginServer
 
@@ -2084,22 +2068,10 @@ export class GameRoom extends BasicRoom {
 			players: battle.players.map(p => p.name).join(','),
 			format: format.name,
 			rating, // will probably do nothing
-			hidden: hidden === 0 ? '' : hidden,
+			hidden,
 			inputlog: battle.inputLog?.join('\n') || undefined,
 			password,
 		});
-		if (result?.errorip) {
-			connection?.popup(`This server's request IP ${result.errorip} is not a registered server.`);
-			return;
-		}
-
-		const fullid = result?.replayid;
-		const url = `https://${Config.routes.replays}/${fullid}`;
-		connection?.popup(
-			`|html|<p>Your replay has been uploaded! It's available at:</p><p> ` +
-			`<a class="no-panel-intercept" href="${url}" target="_blank">${url}</a> ` +
-			`<copytext value="${url}">Copy</copytext>`
-		);
 	}
 
 	getReplayData() {
