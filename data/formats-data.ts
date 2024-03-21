@@ -1,10 +1,8 @@
 export const FormatsData: {[k: string]: SpeciesFormatsData} = {
-	// Fakemons
-	voltaumaton: {
-		tier: "OU",
-		natDexTier: "OU",
-	},
-	//
+	//#region Fakemons
+
+	//#endregion
+	//#region Original Dex
 	bulbasaur: {
 		tier: "LC",
 	},
@@ -6060,4 +6058,5 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		isNonstandard: "Custom",
 		tier: "Illegal",
 	},
+	//#endregion
 };
