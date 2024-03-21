@@ -1,4 +1,10 @@
 export const FormatsData: {[k: string]: SpeciesFormatsData} = {
+	// Fakemons
+	voltaumaton: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	//
 	bulbasaur: {
 		tier: "LC",
 	},
