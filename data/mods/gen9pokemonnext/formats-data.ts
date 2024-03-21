@@ -4,5 +4,10 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		isNonstandard: null,
 		tier: "OU",
 		natDexTier: "OU",
+	},
+	voltaumaton: {
+		isNonstandard: null,
+		tier: "OU",
+		natDexTier: "OU",
 	}
 };
