@@ -2046,7 +2046,7 @@ export class GameRoom extends BasicRoom {
 
 		// // If we have a direct connetion to a Replays database, just upload the replay
 		// // directly.
-		const url = `https://replay.thetrainercorner.net/${id}`;
+		const url = `https://replay.thetrainercorner.net/pn/${id}`;
 		connection.popup(`Your replay has been saved. You can find it at ${url}`);
 		await axios.post('https://replay.thetrainercorner.net/pn', {
 				id: id,
