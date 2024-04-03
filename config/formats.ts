@@ -22,10 +22,14 @@ export const Formats: FormatList = [
 		section: "Pokemon Next: Regional Dex",
 	},
 	{
-		name: "[Gen 9] Pokemon Next National Dex AG",
+		name: "[Gen 9] Pokemon Next National Dex",
 		desc: "Pokemon Next Official Format",
 		mod: 'gen9pokemonnext',
-		ruleset: ['Standard NatDex'],
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
+		banlist: [
+			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
 	},
 
 	// S/V Singles
