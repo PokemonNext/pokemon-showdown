@@ -14,7 +14,6 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		natDexTier: "OU",
 	},
 	voltaumaton: {
-		isNonstandard: null,
 		tier: "OU",
 		natDexTier: "OU",
 	}

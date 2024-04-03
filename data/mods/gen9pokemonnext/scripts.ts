@@ -73,6 +73,7 @@ export const PNDex: {[k: string]: number} = {
 	// "scattervein": 5072,
 	// "hemogoblin": 5073,
 	// "cresceidon": 5074,
+	voltaumaton: 10001,
 };
 export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
