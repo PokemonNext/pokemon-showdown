@@ -3,7 +3,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		onModifyAtkPriority: 5,
 		onModifyAtk(atk, attacker, defender, move) {
 			if (move.type === 'Fire') {
-				this.debug('Steelworker boost');
+				this.debug('Smoldering boost');
 				return this.chainModify(1.5);
 			}
 		},
