@@ -16,6 +16,6 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		},
 		name: "Smoldering",
 		rating: 3.5,
-		num: -2000,
+		num: -6001,
 	}
 };
