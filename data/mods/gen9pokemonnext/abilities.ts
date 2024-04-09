@@ -62,7 +62,7 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		inherit:true,
 		onModifyMove(move){
 			if (move.category == "Special" && move.basePower > 0)
-				move.multihit = [2][5];
+				move.multihit = [2, 5];
 				move.basePowerModifier= 0.3;
 		},
 		name: "Multishot",
