@@ -3,10 +3,10 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		num: 10001,
 		name: "Voltaumaton",
 		types: ["Electric", "Steel"],
-		abilities: {0: "Volt Absorb", 1: "Iron Fist", H: "Heavy Metal"},
+		abilities: {0: "Iron Fist", 1: "Circuit Breaker", H: "Heavy Metal"},
 		baseStats: {hp: 100, atk: 95, def: 125, spa: 78, spd: 80, spe: 70},
-		weightkg: 20,
-		heightm: 1.0,
+		weightkg: 178,
+		heightm: 2.26,
 		eggGroups: ["Undiscovered"],
 		tags: ["Fakemon"],
 	},
@@ -21,6 +21,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 12, 
 		color: "Black", 
 		eggGroups: ["Field", "Water1"], 
+		tags: ["Fakemon"],
 	},
 	plushadow: {
 		num: 10003,
@@ -28,10 +29,11 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Ghost", "Normal"],
 		abilities: {0: "Phantasm", H: "Cursed Body"},
 		baseStats: {hp: 90, atk: 58, def: 117, spa: 97, spd: 80, spe: 50}, 
-		heightm: 0.8, 
-		weightkg: 12, 
-		color: "Black", 
-		eggGroups: ["Field", "Water1"], 
+		heightm: 0.2, 
+		weightkg: 0.9, 
+		color: "Green", 
+		eggGroups: ["Amorphous"], 
+		tags: ["Fakemon"],
 	},
 	//mareascudo: { (no sprite)
 		//num: 10004,
@@ -52,6 +54,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		color: "Black", 
 		evos: ["Marshmang"],
 		eggGroups: ["Fairy", "Amorphous"],
+		tags: ["Fakemon"],
 	},
 	marshmang: {
 		num: 10006,
@@ -67,6 +70,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoLevel: 25,
 		evos: ["Marshmagon"],
 		eggGroups: ["Fairy", "Amorphous"],
+		tags: ["Fakemon"],
 	},
 	marshmagon: {
 		num: 10007,
@@ -81,6 +85,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		prevo: "Marshmang",
 		evoLevel: 45,
 		eggGroups: ["Fairy", "Amorphous"],
+		tags: ["Fakemon"],
 	},
 	dratiniolul: {
 		num: 147,
@@ -95,6 +100,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		color: "Purple",
 		evos: ["Dragonair-Olul"],
 		eggGroups: ["Water 1", "Dragon"],
+		tags: ["Fakemon"],
 	},
 	dragonairolul: {
 		num: 148,
@@ -111,6 +117,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoLevel: 30,
 		evos: ["Detreki"],
 		eggGroups: ["Water 1", "Dragon"],
+		tags: ["Fakemon"],
 	},
 	detreki: {
 		num: 10008,
@@ -125,6 +132,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoLevel: 55,
 		evos: ["Detreki"],
 		eggGroups: ["Water 1", "Dragon"],
+		tags: ["Fakemon"],
 	},
 	divana: {
 		num: 10009,
@@ -140,6 +148,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoType: "levelMove",
 		evoMove: "Idolatry",
 		eggGroups: ["Human-Like"],
+		tags: ["Fakemon"],
 	},
 	eyespy: {
 		num: 10010,
@@ -151,6 +160,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 4.5,
 		color: "Red",
 		eggGroups: ["Fairy", "Human-Like"],
+		tags: ["Fakemon"],
 	},
 	icyall: {
 		num: 10011,
@@ -162,6 +172,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 22.68,
 		color: "Red",
 		eggGroups: ["Fairy", "Human-Like"],
+		tags: ["Fakemon"],
 	},
 	reflight: {
   		num: 10012,
@@ -174,6 +185,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
   		weightkg: 42.3,
   		color: "Blue",
   		eggGroups: ["Mineral", "Flying"],
+		  tags: ["Fakemon"],
   		otherFormes: ["Reflight-F"],
   		formeOrder: ["Reflight", "Reflight-F"],
 	},
@@ -188,6 +200,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		weightkg: 42.3,
 		color: "Blue",
 		eggGroups: ["Mineral", "Flying"],
+		tags: ["Fakemon"],
 		otherFormes: ["Reflight"],
 		formeOrder: ["Reflight", "Reflight-F"],
   },
