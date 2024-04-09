@@ -63,7 +63,11 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		onModifyMove(move){
 			if (move.category == "Special" && move.basePower > 0)
 				move.multihit = [2, 5];
-				move.basePowerModifier= 0.3;
+		},
+		onBasePower(basePower, source, target, move) {
+			if (move.category == "Special" && move.basePower > 0) {
+				return basePower * 0.3;
+			}
 		},
 		name: "Multishot",
 		rating: 4,
