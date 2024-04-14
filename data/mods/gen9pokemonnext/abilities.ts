@@ -56,7 +56,8 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		name: "Circuit Breaker",
 		rating: 3,
 		num: -6003,
-		shortDesc: "This pokemon's moves ignore type immunities"
+		shortDesc: "This pokemon's moves ignore type immunities",
+		desc: "This pokemon's moves ignore type immunities"
 	},
 	multishot: {
 		inherit:true,
