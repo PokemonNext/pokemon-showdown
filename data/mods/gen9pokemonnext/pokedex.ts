@@ -132,6 +132,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		evoLevel: 55,
 		eggGroups: ["Water 1", "Dragon"],
 		tags: ["Fakemon"],
+		tier: "OU",
+		natDexTier: "OU",
 	},
 	divana: {
 		num: 10009,
