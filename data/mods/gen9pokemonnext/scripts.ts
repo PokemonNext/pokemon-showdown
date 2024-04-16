@@ -1,3 +1,4 @@
+import { FormatsData } from "./../../formats-data";
 export const PNDex: {[k: string]: number} = {
 // "syclar": 5001,
 	// "syclant": 5002,
@@ -90,6 +91,21 @@ export const Scripts: ModdedBattleScriptsData = {
 	gen: 9,
 	inherit: 'gen9',
 	init() {
+		const dataKeys = Object.keys(FormatsData);
+
+		for (let dataKey of dataKeys) {
+			if (FormatsData[dataKey].tier)
+				if (FormatsData[dataKey].tier = "Illegal")
+					this.modData('FormatsData', dataKey).tier = "OU";
+				else this.modData('FormatsData', dataKey).tier = FormatsData[dataKey].tier;
+			else this.modData('FormatsData', dataKey).tier = "OU";
+			if (FormatsData[dataKey].natDexTier)
+				this.modData('FormatsData', dataKey).natDexTier = FormatsData[dataKey].natDexTier;
+			if (FormatsData[dataKey].isNonstandard)
+				this.modData('FormatsData', dataKey).isNonstandard = FormatsData[dataKey].isNonstandard;
+			if (FormatsData[dataKey].doublesTier)
+				this.modData('FormatsData', dataKey).doublesTier = FormatsData[dataKey].doublesTier;
+		}
 		for (const i in this.data.Pokedex) {
 			if (i in PNDex) {
 				this.data.Pokedex[i].num = PNDex[i];
