@@ -1,4 +1,4 @@
-const {...baseData} = require('./../../formats-data');
+import {FormatsData as baseData} from "./../../formats-data";
 export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	baseData,
 	syclar: {
