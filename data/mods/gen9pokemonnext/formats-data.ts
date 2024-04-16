@@ -1,4 +1,6 @@
+const {...baseData} = require('./../../formats-data');
 export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
+	baseData,
 	syclar: {
 		inherit: true,
 		tier: "LC",
