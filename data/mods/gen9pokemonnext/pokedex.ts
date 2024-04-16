@@ -206,4 +206,8 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 // 		otherFormes: ["Reflight"],
 // 		formeOrder: ["Reflight", "Reflight-F"],
 //   },
+	jynx: {
+		inherit:true,
+		evos: ["Divina"]
+	}
 }
