@@ -94,7 +94,6 @@ export const Scripts: ModdedBattleScriptsData = {
 		const dataKeys = Object.keys(FormatsData);
 
 		for (let dataKey of dataKeys) {
-			console.log(dataKey);
 			if (FormatsData[dataKey].tier)
 				if (FormatsData[dataKey].tier = "Illegal")
 					this.modData('FormatsData', dataKey).tier = "OU";
@@ -106,7 +105,6 @@ export const Scripts: ModdedBattleScriptsData = {
 				this.modData('FormatsData', dataKey).isNonstandard = FormatsData[dataKey].isNonstandard;
 			if (FormatsData[dataKey].doublesTier)
 				this.modData('FormatsData', dataKey).doublesTier = FormatsData[dataKey].doublesTier;
-			console.log(this.modData('FormatsData', dataKey));
 		}
 		for (const i in this.data.Pokedex) {
 			if (i in PNDex) {

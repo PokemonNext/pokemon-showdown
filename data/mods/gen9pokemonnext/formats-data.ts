@@ -62,5 +62,9 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	reflightfemale: {
 		tier: "OU", 
 		natDexTier: "OU",
+	},
+	cinccino: {
+		tier: "OU",
+		natDexTier: "OU",
 	}
 };
