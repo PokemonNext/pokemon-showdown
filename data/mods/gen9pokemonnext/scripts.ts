@@ -94,7 +94,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		const dataKeys = Object.keys(FormatsData);
 
 		for (let dataKey of dataKeys) {
-			console.log(dataKeys);
+			console.log(dataKey);
 			if (FormatsData[dataKey].tier)
 				if (FormatsData[dataKey].tier = "Illegal")
 					this.modData('FormatsData', dataKey).tier = "OU";
