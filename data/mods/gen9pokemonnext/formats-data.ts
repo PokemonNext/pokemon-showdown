@@ -1,12 +1,4 @@
 export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
-	syclar: {
-		inherit: true,
-		tier: "LC",
-	},
-	syclant: {
-		inherit: true,
-		tier: "OU",
-	},
 	voltaumaton: {
 		tier: "OU",
 		natDexTier: "OU",
@@ -61,10 +53,6 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	},
 	reflightfemale: {
 		tier: "OU", 
-		natDexTier: "OU",
-	},
-	cinccino: {
-		tier: "OU",
 		natDexTier: "OU",
 	}
 };
