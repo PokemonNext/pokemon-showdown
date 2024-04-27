@@ -566,17 +566,17 @@ export const Formats: FormatList = [
 // 	// Draft League
 // 	///////////////////////////////////////////////////////////////////
 
-// 	{
-// 		section: "Draft",
-// 		column: 1,
-// 	},
-// 	{
-// 		name: "[Gen 9] Draft",
+ 	{
+ 		section: "Draft",
+ 		column: 1,
+ 	},
+ 	{
+ 		name: "[Gen 9] Draft",
 
-// 		mod: 'gen9',
-// 		searchShow: false,
-// 		ruleset: ['Standard Draft', 'Min Source Gen = 9'],
-// 	},
+ 		mod: 'gen9',
+ 		searchShow: false,
+ 		ruleset: ['Standard Draft', 'Min Source Gen = 9'],
+ 	},
 // 	{
 // 		name: "[Gen 9] Tera Preview Draft",
 
@@ -601,14 +601,14 @@ export const Formats: FormatList = [
 // 		bestOfDefault: true,
 // 		ruleset: ['Standard Draft', 'Item Clause', 'VGC Timer', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Clause', 'Adjust Level = 50', 'Picked Team Size = 4', 'Min Source Gen = 9'],
 // 	},
-// 	{
-// 		name: "[Gen 9] NatDex Draft",
+	{
+		name: "[Gen 9] NatDex Draft",
 
-// 		mod: 'gen9',
-// 		searchShow: false,
-// 		ruleset: ['Standard Draft', '+Unobtainable', '+Past'],
-// 	},
-// 	{
+ 		mod: 'gen9',
+ 		searchShow: false,
+		ruleset: ['Standard Draft', '+Unobtainable', '+Past'],
+	},
+//	{
 // 		name: "[Gen 9] Tera Preview NatDex Draft",
 
 // 		mod: 'gen9',
@@ -631,13 +631,13 @@ export const Formats: FormatList = [
 // 		ruleset: ['[Gen 9] NatDex Draft', 'Double Item Clause', 'Little Cup'],
 // 		banlist: ['Dragon Rage', 'Sonic Boom'],
 // 	},
-// 	{
-// 		name: "[Gen 8] Galar Dex Draft",
+ 	{
+ 		name: "[Gen 8] Galar Dex Draft",
 
-// 		mod: 'gen8',
-// 		searchShow: false,
-// 		ruleset: ['Standard Draft', 'Dynamax Clause'],
-// 	},
+ 		mod: 'gen8',
+ 		searchShow: false,
+ 		ruleset: ['Standard Draft', 'Dynamax Clause'],
+ 	},
 // 	{
 // 		name: "[Gen 8] NatDex Draft",
 
@@ -653,21 +653,21 @@ export const Formats: FormatList = [
 // 		searchShow: false,
 // 		ruleset: ['Standard Draft', 'Item Clause', '!Sleep Clause Mod', '!OHKO Clause', '!Evasion Moves Clause', 'Adjust Level = 50', 'Picked Team Size = 4', '+Past'],
 // 	},
-// 	{
-// 		name: "[Gen 7] Draft",
+ 	{
+ 		name: "[Gen 7] Draft",
 
-// 		mod: 'gen7',
-// 		searchShow: false,
-// 		ruleset: ['Standard Draft', '+LGPE'],
-// 	},
-// 	{
-// 		name: "[Gen 6] Draft",
+ 		mod: 'gen7',
+		searchShow: false,
+ 		ruleset: ['Standard Draft', '+LGPE'],
+ 	},
+ 	{
+ 		name: "[Gen 6] Draft",
 
-// 		mod: 'gen6',
-// 		searchShow: false,
-// 		ruleset: ['Standard Draft', 'Moody Clause', 'Swagger Clause'],
-// 		banlist: ['Soul Dew'],
-// 	},
+		mod: 'gen6',
+ 		searchShow: false,
+		ruleset: ['Standard Draft', 'Moody Clause', 'Swagger Clause'],
+		banlist: ['Soul Dew'],
+	},
 
 // 	// OM of the Month
 // 	///////////////////////////////////////////////////////////////////
@@ -1044,31 +1044,31 @@ export const Formats: FormatList = [
 // 	// Other Metagames
 // 	///////////////////////////////////////////////////////////////////
 
-// 	{
-// 		section: "Other Metagames",
-// 		column: 2,
-// 	},
-// 	{
-// 		name: "[Gen 9] Almost Any Ability",
-// 		desc: `Pok&eacute;mon have access to almost any ability.`,
-// 		threads: [
-// 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710568/">Almost Any Ability</a>`,
-// 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710571/">AAA Resources</a>`,
-// 		],
+ 	{
+ 		section: "Other Metagames",
+ 		column: 2,
+ 	},
+ 	{
+ 		name: "[Gen 9] Almost Any Ability",
+ 		desc: `Pok&eacute;mon have access to almost any ability.`,
+ 		threads: [
+			`&bullet; <a href="https://www.smogon.com/forums/threads/3710568/">Almost Any Ability</a>`,
+ 			`&bullet; <a href="https://www.smogon.com/forums/threads/3710571/">AAA Resources</a>`,
+ 		],
 
-// 		mod: 'gen9',
-// 		ruleset: ['Standard OMs', '!Obtainable Abilities', 'Ability Clause = 1', 'Sleep Moves Clause', 'Terastal Clause', 'Min Source Gen = 9'],
-// 		banlist: [
-// 			'Annihilape', 'Arceus', 'Baxcalibur', 'Calyrex-Ice', 'Calyrex-Shadow', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Dialga-Origin', 'Dragapult',
-// 			'Enamorus-Base', 'Eternatus', 'Flutter Mane', 'Giratina', 'Giratina-Origin', 'Gouging Fire', 'Groudon', 'Ho-Oh', 'Hoopa-Unbound', 'Iron Bundle', 'Iron Valiant',
-// 			'Keldeo', 'Koraidon', 'Kyogre', 'Kyurem', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings',
-// 			'Necrozma-Dusk-Mane', 'Noivern', 'Palkia', 'Palkia-Origin', 'Raging Bolt', 'Rayquaza', 'Regigigas', 'Reshiram', 'Shaymin-Sky', 'Slaking', 'Sneasler',
-// 			'Solgaleo', 'Spectrier', 'Urshifu', 'Urshifu-Rapid-Strike', 'Weavile', 'Zacian', 'Zacian-Crowned', 'Zekrom', 'Arena Trap', 'Comatose', 'Contrary',
-// 			'Fur Coat', 'Good as Gold', 'Gorilla Tactics', 'Huge Power', 'Ice Scales', 'Illusion', 'Imposter', 'Innards Out', 'Magic Bounce', 'Magnet Pull', 'Moody',
-// 			'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Shadow Tag', 'Simple', 'Speed Boost', 'Stakeout', 'Toxic Debris',
-// 			'Triage', 'Unburden', 'Water Bubble', 'Wonder Guard', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Revival Blessing', 'Shed Tail',
-// 		],
-// 	},
+ 		mod: 'gen9',
+ 		ruleset: ['Standard OMs', '!Obtainable Abilities', 'Ability Clause = 1', 'Sleep Moves Clause', 'Terastal Clause', 'Min Source Gen = 9'],
+ 		banlist: [
+ 			'Annihilape', 'Arceus', 'Baxcalibur', 'Calyrex-Ice', 'Calyrex-Shadow', 'Darkrai', 'Deoxys-Base', 'Deoxys-Attack', 'Dialga', 'Dialga-Origin', 'Dragapult',
+ 			'Enamorus-Base', 'Eternatus', 'Flutter Mane', 'Giratina', 'Giratina-Origin', 'Gouging Fire', 'Groudon', 'Ho-Oh', 'Hoopa-Unbound', 'Iron Bundle', 'Iron Valiant',
+ 			'Keldeo', 'Koraidon', 'Kyogre', 'Kyurem', 'Kyurem-Black', 'Kyurem-White', 'Lugia', 'Lunala', 'Magearna', 'Mewtwo', 'Miraidon', 'Necrozma-Dawn-Wings',
+ 			'Necrozma-Dusk-Mane', 'Noivern', 'Palkia', 'Palkia-Origin', 'Raging Bolt', 'Rayquaza', 'Regigigas', 'Reshiram', 'Shaymin-Sky', 'Slaking', 'Sneasler',
+ 			'Solgaleo', 'Spectrier', 'Urshifu', 'Urshifu-Rapid-Strike', 'Weavile', 'Zacian', 'Zacian-Crowned', 'Zekrom', 'Arena Trap', 'Comatose', 'Contrary',
+ 			'Fur Coat', 'Good as Gold', 'Gorilla Tactics', 'Huge Power', 'Ice Scales', 'Illusion', 'Imposter', 'Innards Out', 'Magic Bounce', 'Magnet Pull', 'Moody',
+ 			'Neutralizing Gas', 'Orichalcum Pulse', 'Parental Bond', 'Poison Heal', 'Pure Power', 'Shadow Tag', 'Simple', 'Speed Boost', 'Stakeout', 'Toxic Debris',
+ 			'Triage', 'Unburden', 'Water Bubble', 'Wonder Guard', 'King\'s Rock', 'Razor Fang', 'Baton Pass', 'Last Respects', 'Revival Blessing', 'Shed Tail',
+ 		],
+ 	},
 // 	{
 // 		name: "[Gen 9] Balanced Hackmons",
 // 		desc: `Anything directly hackable onto a set (EVs, IVs, forme, ability, item, and move) and is usable in local battles is allowed.`,
