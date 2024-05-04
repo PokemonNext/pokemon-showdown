@@ -93,5 +93,25 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		rating: 4,
 		num: -6005,
 		shortDesc: "This Pokemon's Normal-type moves become Stellar type"
+	},
+	emperorscommand: {
+		inherit: true,
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, pokemon, target, move) {
+			return this.chainModify([4506, 4096]);
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, pokemon, target, move) {
+			return this.chainModify([4506, 4096]);
+		},
+		onAnyModifyDamage(damage, source, target, move) {
+			if (target.isAlly(this.effectState.target)) {
+				this.debug('Emperors Command weaken');
+				return this.chainModify(0.9);
+			}
+		},
+		name: "Emperors Command",
+		rating: 4,
+		num: -6006,
 	}
 };
