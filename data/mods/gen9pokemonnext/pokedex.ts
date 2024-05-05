@@ -238,7 +238,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		types: ["Rock", "Dragon"],
 		baseSpecies: "Tyrantrum",
 		forme: "Mega",
-		baseStats: {hp: 82, atk: 151, def: 129, spa: 99, spd: 79, spe: 81},
+		baseStats: {hp: 82, atk: 146, def: 129, spa: 104, spd: 79, spe: 81},
 		abilities: {0: "Dracilate"},
 		heightm: 2.5,
 		weightkg: 270,
