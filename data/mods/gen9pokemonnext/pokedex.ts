@@ -1,3 +1,5 @@
+import { inherits } from "util";
+
 export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	voltaumaton: {
 		num: 10001,
@@ -209,5 +211,95 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	jynx: {
 		inherit:true,
 		evos: ["Divina"]
+	},
+	empoleon:{
+		inherit: true,
+		otherFormes: ["Empoleon-Mega"],
+		formeOrder: ["Empoleon", "Empoleon-Mega"],
+	},
+	empoleonmega:{
+		num: 10013,
+		name: "Empoleon-Mega",
+		types: ["Water", "Steel"],
+		baseSpecies: "Empoleon",
+		forme: "Mega",
+		baseStats: {hp: 84, atk: 90, def: 100, spa: 141, spd: 121, spe: 94},
+		abilities: {0: "Emperors Command"},
+		heightm: 2.4,
+		weightkg: 88,
+		color: "Blue",
+		tags: ["Fakemon"],
+		eggGroups: ["Water 1", "Field"],
+		requiredItem: "Empoleonite"
+	},
+	tyrantrummega:{
+		num: 10014,
+		name: "Tyrantrum-Mega",
+		types: ["Rock", "Dragon"],
+		baseSpecies: "Tyrantrum",
+		forme: "Mega",
+		baseStats: {hp: 82, atk: 151, def: 129, spa: 99, spd: 79, spe: 81},
+		abilities: {0: "Dracilate"},
+		heightm: 2.5,
+		weightkg: 270,
+		color: "Red",
+		tags: ["Fakemon"],
+		eggGroups: ["Monster", "Dragon"],
+		requiredItem: "Tyrantrumite"
+	},
+	soaringfin:{
+		num: 10015,
+		name: "Soaring Fin",
+		types: ["Water", "Flying"],
+		gender: "N",
+		baseStats: {hp: 107, atk: 121, def: 85, spa: 75, spd: 75, spe: 107},
+		abilities: {0: "Protosynthesis"},
+		heightm: 2.3,
+		weightkg: 134.6,
+		color: "Blue",
+		tags: ["Paradox", "Fakemon"],
+		eggGroups: ["Undiscovered"]
+	},
+	heatransupra: {
+		num: 10016,
+		name: "Heatran-Supra",
+		baseSpecies: "Heatran",
+		forme: "Supra",
+		types: ["Fire", "Grass"],
+		baseStats: {hp: 91, atk: 90, def: 106, spa: 130, spd: 106, spe: 77},
+		abilities: {0: "Dancer", H: "Chlorophyll"},
+		heightm: 1.7,
+		weightkg: 430,
+		color: "Brown",
+		tags: ["Sub-Legendary"],
+		eggGroups: ["Undiscovered", "Fakemon"],
+	},
+	snorlaxfrost: {
+		num: 10017,
+		name: "Snorlax-Frost",
+		baseSpecies: "Snorlax",
+		forme: "Frost",
+		types: ["Ground", "Ice"],
+		baseStats: {hp: 160, atk: 110, def: 65, spa: 65, spd: 110, spe: 30},
+		abilities: {0: "Thick Fat", 1: "Cursed Body", H: "Refrigerate"},
+		heightm: 2.1,
+		weightkg: 460,
+		color: "Brown",
+		eggGroups: ["Monster"],
+	},
+	snorlaxfrostmega:{
+		num: 10018,
+		name: "Snorlax-Frost-Mega",
+		types: ["Ground", "Ice"],
+		baseSpecies: "Snorlax-Frost",
+		forme: "Mega",
+		baseStats: {hp: 160, atk: 157, def: 80, spa: 80, spd: 123, spe: 40},
+		abilities: {0: "Sheer Force"},
+		heightm: 2.5,
+		weightkg: 520,
+		color: "Brown",
+		tags: ["Fakemon"],
+		eggGroups: ["Monster"],
+		requiredItem: "Frosty Snorlaxite"
 	}
 }

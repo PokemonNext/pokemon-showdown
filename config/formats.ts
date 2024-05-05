@@ -2275,7 +2275,7 @@ export const Formats: FormatList = [
 			`&bullet; <a href="https://www.smogon.com/forums/threads/3714863/">National Dex Sample Teams</a>`,
 		],
 
-		mod: 'gen9',
+		mod: 'gen9pokemonnext',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
 		unbanlist: ['Penquill'],
 		banlist: [
