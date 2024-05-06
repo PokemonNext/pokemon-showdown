@@ -2828,18 +2828,6 @@ export const Formats: FormatList = [
 
 // 	// Draft League
 // 	///////////////////////////////////////////////////////////////////
-
- 	{
- 		section: "Draft",
- 		column: 1,
- 	},
- 	{
- 		name: "[Gen 9] Draft",
-
- 		mod: 'gen9',
- 		searchShow: false,
- 		ruleset: ['Standard Draft', 'Min Source Gen = 9'],
- 	},
 // 	{
 // 		name: "[Gen 9] Tera Preview Draft",
 
