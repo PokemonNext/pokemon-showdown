@@ -51,8 +51,60 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "OU", 
 		natDexTier: "OU",
 	},
-	reflightfemale: {
-		tier: "OU", 
+	empoleonmega: {
+		tier: "OU",
 		natDexTier: "OU",
-	}
+	},
+	tyrantrummega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	soaringfin: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	heatransupra: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	snorlaxfrost: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	snorlaxfrostmega: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	youcan: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	canyou: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	abyssalstorm: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	kingjaw: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	lickitunghisui: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	lickitale: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	ironjoy: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
+	grandmirage: {
+		tier: "OU",
+		natDexTier: "OU",
+	},
 };

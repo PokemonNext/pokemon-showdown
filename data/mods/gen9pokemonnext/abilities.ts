@@ -26,11 +26,11 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 				this.add('-fail', pokemon, 'ability: Phantasm');
 				return this.NOT_FAIL;
 			}
-			if (pokemon.hp <= pokemon.maxhp / 2) {
+			if (pokemon.hp <= pokemon.maxhp * 0.75) {
 				this.add('-fail', pokemon, 'ability: Phantasm', '[weak]');
 				return this.NOT_FAIL;
 			}
-			this.directDamage(pokemon.maxhp / 2);
+			this.directDamage(pokemon.maxhp * 0.75);
 			pokemon.addVolatile('substitute')
 		},
 		name: "Phantasm",
