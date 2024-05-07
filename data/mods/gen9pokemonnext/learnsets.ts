@@ -1053,6 +1053,7 @@ marshmall: {
 			flamethrower: ["9M"],
 			flareblitz: ["9M"],
 			forestscurse: ["9M"],
+			naturepower: ["9M"],
 			gigadrain: ["9M"],
 			growth: ["9M"],
 			headbutt: ["9M"],
