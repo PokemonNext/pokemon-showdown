@@ -419,7 +419,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	billadium: {
 		num: 10028,
 		name: "Billadium",
-		types: ["Steel", "psychic"],
+		types: ["Steel", "Psychic"],
 		baseStats: {hp: 77, atk: 78, def: 103, spa: 105, spd: 85, spe: 77},
 		abilities: {0: "Technician", 1: "Filter", H: "Analytic"},
 		heightm: 1.6,
@@ -430,7 +430,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 	},
 	deustorm: {
 		num: 10029,
-		name: "Duestorm",
+		name: "Deustorm",
 		types: ["Fairy", "Ground"],
 		baseStats: {hp: 77, atk: 45, def: 83, spa: 121, spd: 88, spe: 126},
 		abilities: {0: "Wonder Guard"},
