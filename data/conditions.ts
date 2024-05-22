@@ -544,6 +544,10 @@ export const Conditions: {[k: string]: ConditionData} = {
 				this.debug('Sunny Day Hydro Steam boost');
 				return this.chainModify(1.5);
 			}
+			if (move.id === 'gracefuldive' && !attacker.hasItem('utilityumbrella')) {
+				this.debug('Sunny Day Graveful Dive normal damage');
+				return this.chainModify(1);
+			}
 			if (defender.hasItem('utilityumbrella')) return;
 			if (move.type === 'Fire') {
 				this.debug('Sunny Day fire boost');

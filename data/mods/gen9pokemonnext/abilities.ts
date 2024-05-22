@@ -134,4 +134,19 @@ export const Abilities: {[k: string]: ModdedAbilityData} = {
 		rating: 4,
 		num: -6007,
 	},
+	drift: {
+		name: "Drift",
+		onModifyAccuracyPriority: 10,
+		onModifyAccuracy(accuracy, target, source, move) {
+			if (move.type="Fire") {
+				this.debug('Drift - setting accuracy to 75');
+				return 75;
+			}
+			if (move.type="Ice") {
+				this.debug('Drift - setting accuracy to 75');
+				return 75;
+			}
+		},
+		shortDesc: "Ice and Fire moves are 75% accurate when used on this Pokemon.",
+	}
 };
