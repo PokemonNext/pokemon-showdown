@@ -2285,7 +2285,6 @@ export const Formats: FormatList = [
 	},
 	{
 		name: "[Gen 9] Pokemon Next Natdex Doubles",
-		desc: "Pokemon Next Official Format",
 		mod: 'gen9pokemonnext',
 		gameType: 'doubles',
 		ruleset: ['Standard Doubles', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
@@ -2295,14 +2294,4 @@ export const Formats: FormatList = [
 			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 	},
-	{
-		name: "Pokemon Custom",
-		mod: 'gen9pokemonnext',
-		searchShow: false,
-		debug: true,
-		battle: {trunc: Math.trunc},
-		// no restrictions, for serious (other than team preview)
-		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
-	},
-
 ];
