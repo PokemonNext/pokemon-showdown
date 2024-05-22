@@ -2283,15 +2283,4 @@ export const Formats: FormatList = [
 			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 	},
-	{
-		name: "[Gen 9] Pokemon Next Natdex Doubles",
-		mod: 'gen9pokemonnext',
-		gameType: 'doubles',
-		ruleset: ['Standard Doubles', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
-		unbanlist: ['Penquill'],
-		banlist: [
-			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
-		],
-	},
 ];
