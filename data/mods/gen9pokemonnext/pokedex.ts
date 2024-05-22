@@ -445,7 +445,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		name: "Leaflutter",
 		types: ["Grass", "Flying"],
 		baseStats: {hp: 55, atk: 102, def: 70, spa: 85, spd: 60, spe: 112},
-		abilities: {0: "Drift", H: "Inflitrator"},
+		abilities: {0: "Drift", H: "Infiltrator"},
 		heightm: 0.01,
 		weightkg: 0.001,
 		color: "Orange",
