@@ -38,6 +38,14 @@ export const Formats: FormatList = [
 		ruleset: ['Standard Doubles'],
 		banlist: ['DUber', 'Shadow Tag'],
 	},
+	{
+		name: "[Gen 9] Pokemon Next Custom Game",
+
+		mod: 'gen9pokemonnext',
+		battle: {trunc: Math.trunc},
+		// no restrictions, for serious (other than team preview)
+		ruleset: ['Team Preview', 'Cancel Mod', 'Max Team Size = 24', 'Max Move Count = 24', 'Max Level = 9999', 'Default Level = 100'],
+	},
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
 
