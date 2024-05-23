@@ -87,3 +87,7 @@ export const PNDex: {[k: string]: number} = {
 	reflight: 10012,
 	reflightfemale: 10013,
 };
+export const Scripts: ModdedBattleScriptsData = {
+	gen: 9,
+	inherit: 'gen9dlc1',
+}
