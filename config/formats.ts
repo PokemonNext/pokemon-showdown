@@ -24,24 +24,19 @@ export const Formats: FormatList = [
 		section: "Pokemon Next",
 	},
 	{
-		name: "[Gen 9] Pokemon Next National Dex",
+		name: "[Gen 9] Pokemon Next Singles",
 		mod: 'gen9pokemonnext',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
-		unbanlist: ['Penquill'],
 		banlist: [
 			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
 			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
 		],
 	},
 	{
-		name: "[Gen 9] Pokemon Next National Dex Doubles",
+		name: "[Gen 9] Pokemon Next Doubles",
 		mod: 'gen9pokemonnext',
 		ruleset: ['Standard Doubles'],
-		unbanlist: ['Penquill'],
-		banlist: [
-			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
-			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
-		],
+		banlist: ['DUber', 'Shadow Tag'],
 	},
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
