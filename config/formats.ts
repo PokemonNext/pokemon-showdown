@@ -24,7 +24,7 @@ export const Formats: FormatList = [
 		section: "Pokemon Next",
 	},
 	{
-		name: "[Gen 9] National Dex",
+		name: "[Gen 9] Pokemon Next National Dex",
 		mod: 'gen9pokemonnext',
 		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
 		unbanlist: ['Penquill'],
@@ -34,7 +34,7 @@ export const Formats: FormatList = [
 		],
 	},
 	{
-		name: "[Gen 9] National Dex Doubles",
+		name: "[Gen 9] Pokemon Next National Dex Doubles",
 		mod: 'gen9pokemonnext',
 		ruleset: ['Standard Doubles'],
 		unbanlist: ['Penquill'],
