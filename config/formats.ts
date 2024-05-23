@@ -35,6 +35,7 @@ export const Formats: FormatList = [
 	{
 		name: "[Gen 9] Pokemon Next Doubles",
 		mod: 'gen9pokemonnext',
+		gameType: 'doubles',
 		ruleset: ['Standard Doubles'],
 		banlist: ['DUber', 'Shadow Tag'],
 	},
