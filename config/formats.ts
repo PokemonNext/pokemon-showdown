@@ -18,7 +18,31 @@ The column value will be ignored for repeat sections.
 */
 
 export const Formats: FormatList = [
-
+	// Pokemon Next Format
+	///////////////////////////////////////////////////////////////////
+	{
+		section: "Pokemon Next",
+	},
+	{
+		name: "[Gen 9] National Dex",
+		mod: 'gen9pokemonnext',
+		ruleset: ['Standard NatDex', 'OHKO Clause', 'Evasion Clause', 'Species Clause', 'Sleep Clause Mod'],
+		unbanlist: ['Penquill'],
+		banlist: [
+			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
+	},
+	{
+		name: "[Gen 9] National Dex Doubles",
+		mod: 'gen9pokemonnext',
+		ruleset: ['Standard Doubles'],
+		unbanlist: ['Penquill'],
+		banlist: [
+			'ND Uber', 'ND AG', 'Arena Trap', 'Moody', 'Power Construct', 'Shadow Tag', 'King\'s Rock',
+			'Quick Claw', 'Razor Fang', 'Assist', 'Baton Pass', 'Last Respects', 'Shed Tail',
+		],
+	},
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
 
@@ -512,18 +536,6 @@ export const Formats: FormatList = [
 		mod: 'moderngen2',
 		ruleset: ['Standard', 'Useless Items Clause', 'Useless Moves Clause', 'MG2 Mod', 'Sleep Moves Clause', '+No Ability', '-All Abilities'],
 		banlist: ['AG', 'Uber', 'Fake Out', 'Shell Smash', 'Last Respects', 'Baton Pass', 'Alakazite', 'Soul Dew'],
-	},
-	{
-		name: "[Gen 6] NEXT OU",
-		threads: [
-			`&bullet; <a href="https://www.smogon.com/forums/threads/3476151/">Gen-NEXT Development Thread</a>`,
-		],
-
-		mod: 'gennext',
-		searchShow: false,
-		challengeShow: false,
-		ruleset: ['Obtainable', 'Standard NEXT', 'Team Preview'],
-		banlist: ['Uber'],
 	},
 
 	// Draft League
@@ -1457,32 +1469,6 @@ export const Formats: FormatList = [
 			'Zygarde-Complete', 'Battle Bond', 'Power Construct', 'Moody', 'Shadow Tag', 'Damp Rock', 'Focus Band', 'King\'s Rock', 'Quick Claw', 'Razor Fang', 'Smooth Rock',
 			'Terrain Extender', 'Baton Pass',
 		],
-	},
-
-	// Randomized Format Spotlight
-	///////////////////////////////////////////////////////////////////
-
-	{
-		section: "Randomized Format Spotlight",
-		column: 3,
-	},
-	{
-		name: "[Gen 9] Chimera 1v1 Random Battle",
-		desc: "Merges a team of six into a single Pok\u00e9mon depending on the order chosen at team preview: It gains the typing of the first, item of the second, ability of the third, stats of the fourth, the first two moves of the fifth, and the last two moves of the sixth.",
-
-		team: 'random',
-		ruleset: ['[Gen 9] Random Battle', 'Chimera 1v1 Rule', 'Terastal Clause', 'Adjust Level = 100'],
-		onBegin() {
-			this.add(`raw|<div class="broadcast-blue"><b>Chimera Rands is a 1v1 format where you combine your 6 Pokemon into one "Chimera." The order you select during team preview is important! In sequence, your picks determine your Chimera's Type, Item, Ability, Stats, Moves 1 &amp; 2, then finally Moves 3 &amp; 4.</b></div>`);
-		},
-	},
-	{
-		name: "[Gen 9] Random Roulette",
-		desc: `Random Battles in a random generation! [Gen 1] Random Battle - [Gen 9] Random Battle.`,
-
-		mod: 'randomroulette',
-		team: 'random',
-		searchShow: false,
 	},
 
 	// Past Gens OU
